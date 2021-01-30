@@ -24,7 +24,7 @@
 #print(poruka)
 
 
-#exercise
+            #exercise 1
 #house_value = 1000000
 #credit = True
 #if credit:
@@ -35,7 +35,7 @@
 
 
 
-#exercise
+            #exercise 2
 #acc = 4
 #if acc <= 3:                        # name = "J"
  #   print('not long enough sry')    #if len(name) <3:
@@ -46,7 +46,7 @@
 
 
 
-#exercise
+            #exercise 3
 #weight = int(input('Weight: '))
 #unit = input('(L)bs or (K)g: ')
 #if unit.upper() == 'L':
@@ -58,7 +58,7 @@
 
 
 
- #exercise
+            #exercise 4
 secretNum = 55
 guess_count = 0
 guess_limit = 3
