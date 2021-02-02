@@ -1,8 +1,8 @@
-# This is a sample Python script.
+# This is a sample Python script..
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+#FECY
 
 ##def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -15,7 +15,7 @@
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-
+some code overhere test ?! a
 #formated strings
 #first = 'Niko'
 #last = 'Belic'
