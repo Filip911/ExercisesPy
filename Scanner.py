@@ -1,12 +1,32 @@
 import socket
 from IPy import IP
+pip3 install Ipy
 
-ipaddress = input('[+] Enter Target To Scan: ')
-port = 80
+def scan(target):
+    converted_ip = check_ip(target)
+    print('\n' + '[-_0 Scanning Target] ' + str(target))
+    for port in range(78, 88):
+        scan_port(converted_ip, port)
 
-try:
-    sock = socket.socket()
-    sock.connect((ipaddress,port))
-    print('[+] Port 80 is Open')
-except:
-    print('[+] Port 80 is Closed')
+def check_ip(ip):
+    try:
+        IP(ip)
+        return(ip)
+    except ValueError:
+        return socket.gethostbyname(ip)
+
+def scan_port(ipaddress, port):
+    try:
+        sock = socket.socket()
+        sock.settimeout(0.5)
+        sock.connect((ipaddress,port))
+        print('[+] Port' + str(port) + ' is Open')
+    except:
+        pass
+
+targets = input('[+] Enter Target/s To Scan(split multiple targets with ,): ')
+if ',' in targets:
+    for ip_add in targets.split(','):
+        scan(ip_add.strip(' '))
+else:
+    scan(targets)
