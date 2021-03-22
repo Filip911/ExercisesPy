@@ -1,6 +1,12 @@
-import nmap
+import socket
+from IPy import IP
 
-scanner = nmap.PortScanner
+ipaddress = input('[+] Enter Target To Scan: ')
+port = 80
 
-print("Welcome,this is basic nmap automation tool")
-print("<<------------------------------------------->>")
+try:
+    sock = socket.socket()
+    sock.connect((ipaddress,port))
+    print('[+] Port 80 is Open')
+except:
+    print('[+] Port 80 is Closed')
